@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets - Diva.ai</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo_small.png" type="image/png">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown-header');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function() {
+                    this.parentElement.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Diva.ai Logo">
+                </a>
+            </div>
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="team.html">Team</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="datasets.html" class="active">Datasets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Open Datasets</h2>
+            <p>Explore the open datasets we use in our projects and contribute to the advancement of AI and data science.</p>
+        </section>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Why We Share Datasets</h2>
+            <div class="company-info">
+                <div class="company-text">
+                    <p>At Diva.ai, we believe in the power of open data to drive innovation and advance the field of artificial intelligence. By sharing datasets and collaborating with the broader AI community, we can collectively develop more robust models, identify new patterns, and create solutions that benefit society as a whole.</p>
+                    <p>Our commitment to open data is reflected in our active participation in data sharing initiatives and our contribution to public datasets. We also leverage high-quality open datasets in our projects, ensuring that our solutions are built on diverse and representative data.</p>
+                    <p>Below, you'll find a curated collection of open datasets that we've used in our projects or contributed to. We encourage you to explore these resources and leverage them for your own research and development efforts.</p>
+                </div>
+                <div class="company-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Visualization">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Dataset Categories</h2>
+            <p class="text-center">Click on each category to explore the datasets</p>
+            
+            <div class="datasets-list">
+                <!-- Dropdown 1 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-shopping-cart"></i> Report 1</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Retail Customer Behavior Dataset</h3>
+                            <p><strong>Description:</strong> A comprehensive dataset of anonymized customer transactions and behavior patterns from retail environments. Includes purchase history, browsing patterns, demographic information, and response to marketing campaigns.</p>
+                            <p><strong>Size:</strong> 2.3 GB (4.5 million transactions)</p>
+                            <p><strong>Format:</strong> CSV, JSON</p>
+                            <p><strong>Used in:</strong> <a href="projects.html">Retail Customer Behavior Analysis Project</a></p>
+                            <p><strong>Source:</strong> Compiled by Diva.ai in collaboration with retail partners (anonymized)</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 2 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-heartbeat"></i> Report 2</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Healthcare Patient Flow Dataset</h3>
+                            <p><strong>Description:</strong> Anonymized patient admission, discharge, and transfer data from a network of hospitals. Useful for predicting hospital resource utilization, optimizing staffing, and improving patient care workflows.</p>
+                            <p><strong>Size:</strong> 1.8 GB (3.2 million patient records)</p>
+                            <p><strong>Format:</strong> CSV, SQL</p>
+                            <p><strong>Used in:</strong> Healthcare Predictive Analytics Project</p>
+                            <p><strong>Source:</strong> MIMIC-III Clinical Database (with additional preprocessing)</p>
+                            <a href="https://mimic.physionet.org/" class="btn">Access Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 3 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-industry"></i> Report 3</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Manufacturing Quality Control Dataset</h3>
+                            <p><strong>Description:</strong> Sensor data from manufacturing production lines, including machine parameters, environmental conditions, and quality inspection results. Ideal for developing predictive maintenance and quality control models.</p>
+                            <p><strong>Size:</strong> 5.1 GB (12 million sensor readings)</p>
+                            <p><strong>Format:</strong> CSV, Parquet</p>
+                            <p><strong>Used in:</strong> Manufacturing Process Optimization Project</p>
+                            <p><strong>Source:</strong> UCI Machine Learning Repository (with extensions by Diva.ai)</p>
+                            <a href="https://archive.ics.uci.edu/ml/index.php" class="btn">Access Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 4 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-chart-line"></i> Report 4</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Financial Transaction Anomaly Dataset</h3>
+                            <p><strong>Description:</strong> Synthetic and anonymized financial transaction data with labeled anomalies. Includes transaction amounts, timestamps, merchant categories, and geographical information. Useful for developing fraud detection algorithms.</p>
+                            <p><strong>Size:</strong> 3.7 GB (8.5 million transactions)</p>
+                            <p><strong>Format:</strong> CSV, JSON</p>
+                            <p><strong>Used in:</strong> Financial Risk Assessment Model Project</p>
+                            <p><strong>Source:</strong> Generated by Diva.ai using advanced simulation techniques</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 5 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-comments"></i> Report 5</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Customer Support Conversations Dataset</h3>
+                            <p><strong>Description:</strong> A collection of anonymized customer support conversations across multiple channels (chat, email, social media). Includes customer queries, agent responses, resolution times, and satisfaction ratings.</p>
+                            <p><strong>Size:</strong> 1.2 GB (500,000 conversations)</p>
+                            <p><strong>Format:</strong> JSON, Text</p>
+                            <p><strong>Used in:</strong> Customer Service AI Assistant Project</p>
+                            <p><strong>Source:</strong> Compiled by Diva.ai from public sources and partner contributions</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 6 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-language"></i> Report 6</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Multilingual Text Classification Dataset</h3>
+                            <p><strong>Description:</strong> A dataset containing text samples in multiple languages with topic and sentiment labels. Useful for developing cross-lingual NLP models.</p>
+                            <p><strong>Size:</strong> 3.4 GB (10 million text samples)</p>
+                            <p><strong>Format:</strong> JSON, CSV</p>
+                            <p><strong>Used in:</strong> Multilingual Content Analysis Project</p>
+                            <p><strong>Source:</strong> Compiled from public domain sources with additional annotations</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 7 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-image"></i> Report 7</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Retail Product Recognition Dataset</h3>
+                            <p><strong>Description:</strong> Images of retail products with bounding box annotations and product metadata. Useful for developing product recognition and inventory management systems.</p>
+                            <p><strong>Size:</strong> 8.2 GB (500,000 images)</p>
+                            <p><strong>Format:</strong> JPEG, JSON</p>
+                            <p><strong>Used in:</strong> Automated Inventory Management Project</p>
+                            <p><strong>Source:</strong> Created by Diva.ai with permission from retail partners</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 8 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-truck"></i> Report 8</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Supply Chain Optimization Dataset</h3>
+                            <p><strong>Description:</strong> Historical data on shipments, inventory levels, demand forecasts, and logistics operations. Useful for developing supply chain optimization models.</p>
+                            <p><strong>Size:</strong> 2.8 GB (3.5 million records)</p>
+                            <p><strong>Format:</strong> CSV, Parquet</p>
+                            <p><strong>Used in:</strong> Supply Chain Optimization Project</p>
+                            <p><strong>Source:</strong> Anonymized data from logistics partners</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 9 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-ad"></i> Report 9</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Digital Marketing Campaign Dataset</h3>
+                            <p><strong>Description:</strong> Data from digital marketing campaigns including impressions, clicks, conversions, and customer journey information. Useful for marketing attribution and optimization models.</p>
+                            <p><strong>Size:</strong> 4.1 GB (15 million events)</p>
+                            <p><strong>Format:</strong> CSV, JSON</p>
+                            <p><strong>Used in:</strong> Marketing Campaign Optimization Project</p>
+                            <p><strong>Source:</strong> Anonymized marketing data with permission</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 10 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-city"></i> Report 10</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Urban Mobility Dataset</h3>
+                            <p><strong>Description:</strong> Data from traffic sensors, public transportation, and mobility services in urban environments. Useful for traffic prediction and urban planning models.</p>
+                            <p><strong>Size:</strong> 6.3 GB (20 million data points)</p>
+                            <p><strong>Format:</strong> CSV, GeoJSON</p>
+                            <p><strong>Used in:</strong> Smart City Traffic Optimization Project</p>
+                            <p><strong>Source:</strong> Public transportation authorities and city data portals</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 11 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-robot"></i> Report 11</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Robotic Process Automation Dataset</h3>
+                            <p><strong>Description:</strong> Sensor data, control commands, and environmental information from robotic systems. Useful for developing robotic control and automation algorithms.</p>
+                            <p><strong>Size:</strong> 3.9 GB (8 million records)</p>
+                            <p><strong>Format:</strong> CSV, HDF5</p>
+                            <p><strong>Used in:</strong> Warehouse Automation Project</p>
+                            <p><strong>Source:</strong> Robotics research labs and industrial partners</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 12 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-user-friends"></i> Report 12</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Social Media Engagement Dataset</h3>
+                            <p><strong>Description:</strong> Anonymized data on user interactions with social media content, including engagement metrics, content features, and temporal patterns.</p>
+                            <p><strong>Size:</strong> 5.7 GB (25 million interactions)</p>
+                            <p><strong>Format:</strong> JSON, CSV</p>
+                            <p><strong>Used in:</strong> Content Recommendation System Project</p>
+                            <p><strong>Source:</strong> Public APIs and research partnerships</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 13 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-graduation-cap"></i> Report 13</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Educational Progress Dataset</h3>
+                            <p><strong>Description:</strong> Anonymized student learning data including progress, assessment results, and engagement with educational content. Useful for developing personalized learning systems.</p>
+                            <p><strong>Size:</strong> 2.1 GB (1.5 million records)</p>
+                            <p><strong>Format:</strong> CSV, JSON</p>
+                            <p><strong>Used in:</strong> Adaptive Learning Platform Project</p>
+                            <p><strong>Source:</strong> Educational institutions with appropriate privacy measures</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown 14 -->
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <h4><i class="fas fa-leaf"></i> Report 14</h4>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dataset-item">
+                            <h3>Environmental Monitoring Dataset</h3>
+                            <p><strong>Description:</strong> Data from environmental sensors including air quality, water quality, temperature, and other environmental metrics. Useful for environmental monitoring and prediction models.</p>
+                            <p><strong>Size:</strong> 4.5 GB (30 million measurements)</p>
+                            <p><strong>Format:</strong> CSV, NetCDF</p>
+                            <p><strong>Used in:</strong> Environmental Impact Assessment Project</p>
+                            <p><strong>Source:</strong> Public environmental monitoring agencies and research institutions</p>
+                            <a href="#" class="btn">Download Dataset</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Data Resources Hub</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h3>Kaggle Datasets</h3>
+                    <p>A platform for finding and publishing data sets, exploring and building models in a web-based data science environment.</p>
+                    <a href="https://www.kaggle.com/datasets" class="btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-university fa-3x"></i>
+                    <h3>UCI Machine Learning Repository</h3>
+                    <p>A collection of databases, domain theories, and data generators that are used by the machine learning community for empirical analysis of algorithms.</p>
+                    <a href="https://archive.ics.uci.edu/ml/index.php" class="btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe fa-3x"></i>
+                    <h3>Google Dataset Search</h3>
+                    <p>A search engine from Google that helps researchers locate online data that is freely available for use.</p>
+                    <a href="https://datasetsearch.research.google.com/" class="btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-bar fa-3x"></i>
+                    <h3>Data.gov</h3>
+                    <p>The U.S. government's open data portal, providing access to federal, state, and local data, tools, and resources.</p>
+                    <a href="https://www.data.gov/" class="btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microscope fa-3x"></i>
+                    <h3>AWS Open Data Registry</h3>
+                    <p>A collection of public datasets that anyone can access for free from AWS, including satellite imagery, genomic data, and more.</p>
+                    <a href="https://registry.opendata.aws/" class="btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code-branch fa-3x"></i>
+                    <h3>GitHub Public Datasets</h3>
+                    <p>A collection of datasets hosted on GitHub that are freely available for public use and contribution.</p>
+                    <a href="https://github.com/topics/dataset" class="btn">Explore</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="cta">
+            <h2>Contribute to Our Datasets</h2>
+            <p>We welcome contributions to our open datasets. If you have data that could benefit the AI and data science community, we'd love to hear from you.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">Contact Us</a>
+                <a href="projects.html" class="btn btn-outline">View Our Projects</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Diva.ai</h3>
+                    <p>Transforming businesses with cutting-edge AI and data analytics solutions.</p>
+                    <img src="images/logo.png" alt="Diva.ai Logo" style="max-width: 120px; margin-top: 15px;">
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="company.html">Company</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="datasets.html">Datasets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 AI Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@diva.ai</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/diva-ai/diva-ai-project" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Diva.ai. All rights reserved. | <a href="https://github.com/diva-ai/diva-ai-project" target="_blank">GitHub Repository</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
